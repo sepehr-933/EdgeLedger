@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding:0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: #333333;
+}
+ul {
+    list-style-type: none;
+}
+#navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0.8;
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    transition: 0.5s;
+}
+#navbar ul li a {
+    padding: 20px ;
+    color: white;
+}
+#navbar ul li a:hover {
+    border-bottom:2px solid #28a745 ;
+}
+#navbar ul {
+    display: flex;
+    margin-right: 9%;
+
+}
+#navbar.top {
+    background: transparent;
+}
+.hero {
+    background: url("../images/home/showcase.jpg") no-repeat
+center center/cover;
+    height: 100vh;
+    position: relative;
+}
+.hero.blog {
+    background: url("../images/home/blog.jpg") no-repeat
+center center/cover;
+    height: 30vh;
+}
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+.content h1{
+    color: white;
+    font-size: 55px;
+    padding-bottom: 40px;
+    font-weight: normal;
+
+}
+.content p {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.hero * {
+    z-index: 1;
+}
+#About {
+    display: flex;
+    background: #f4f4f4;
+}
+#About div {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+#About span {
+    border-radius: 50%;
+    padding: 20px 20px 10px 20px;
+}
+#About i {
+    color: white;
+}
+#About h2 {
+    padding: 35px 0px 0 10px;
+    font-size: 25px;
+    color: #333333;
+}
+#About p {
+    padding: 20px 0;
+    color: #333333;
+}
+.Solutions {
+    display: flex;
+}
+.Solutions div {
+    padding: 140px 30px 0 30px;
+}
+.Solutions h2 {
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+.Solutions h1 {
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+.Solutions p {
+    padding-bottom: 30px;
+}
+.Solutions a {
+    border: 1px solid white;
+}
+.Cases {
+    text-align: center;
+    padding: 40px;
+}
+.Cases h4{
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+.Cases h1 {
+    font-weight: lighter;
+    font-size: 45px;
+    padding-bottom: 35px;
+}
+.Cases p {
+    font-size: 20px;
+    color: #333333;
+}
+#case {
+    display: flex;
+    padding: 15px;
+}
+#case div {
+    flex: 23%;
+    padding: 7px;
+
+}
+#case img {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 7px;
+}
+#case img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.Team {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+.Team div {
+    flex: 1;
+    padding: 15px;
+}
+.Team img {
+    border-radius: 50%;
+    width: 100%;
+}
+.Team h4 {
+    padding-bottom: 20px;
+}
+.Team p {
+    color: #333333;
+}
+#Contact {
+display: flex;
+}
+.padding{
+    padding: 100px 30px;
+    flex: 1;
+}
+#Contact img {
+    width: 100%;
+    flex: 1;
+}
+.formControl {
+    padding: 7px;
+    margin-right: 15%;
+}
+#Contact label, input {
+    padding: 10px;
+    width: 95%;
+    border: none;
+
+}
+#Contact input:focus {
+    outline-color: #0284d0;
+}
+#Contact h1 {
+    font-weight: lighter;
+    padding: 30px 25px;
+}
+.submit {
+    background-color: #0284d0;
+    color: #f4f4f4;
+    margin-left: 20px;
+    width: 98%;
+}
+.submit:hover {
+    opacity: 0.8;
+    cursor:pointer;
+}
+.footer {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+}
+.footer i,p {
+    padding: 20px;
+    color: #f4f4f4;
+}
+.footer i:hover {
+    color: #28a745;
+}
+/* media queries and responsiveness*/
+@media(max-width:768px) {
+    * {
+        line-height: 1.2em;
+    }
+    #navbar {flex-direction: column;
+    align-items: center;
+        height: 80px;
+    }
+    #navbar ul li a {
+        padding: 5px 10px;
+    }
+    .content h1 {
+        line-height: 1.2em;
+    }
+    #About {
+        flex-direction: column;
+    }
+    .Solutions {
+        flex-direction: column;
+
+    }
+    .Solutions div {
+        padding-top: 40px;
+        height: 400px;
+    }
+    .Solutions h1 {
+        line-height: 1.2em;
+    }
+    #case {
+        flex-direction: column;
+    }
+    .Team {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Team img {
+        width: 70%;
+    }
+    #Contact {
+        flex-direction: column;
+    }
+    .submit {
+        width: 100%;
+    }
+
+}
+
+.Post {
+    padding: 20px;
+}
+.Post img{
+  border-radius: 50%;
+
+    width: 300px;
+
+}
+.Post div {
+    display: flex;
+    justify-content: center;
+}
+.Post  h1,h4,p{
+    padding:25px;
+
+}
+.Post p {
+    line-height: 1.5em;
+}
+
+

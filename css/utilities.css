@@ -1,0 +1,37 @@
+.btn-primary {
+    background-color:#28a745 ;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    width: 100px;
+}
+.bg-primary {
+    background-color: #28a745;
+    color: white;
+}
+.cl-primary {
+    color: #28a745;
+}
+.btn-primary:hover {
+    opacity: 0.8;
+}
+.bg-light {
+    background-color: #f4f4f4;
+    color: #333333;
+
+}
+.bg-light p {
+    color: #333333;
+}
+.bg-dark {
+    background-color: #333333;
+    color: #f4f4f4;
+}
+.bg-blue {
+    background-color: #0284d0;
+    color: #f4f4f4;
+}
+.btn-blue {
+    background-color: #0284d0;
+}
